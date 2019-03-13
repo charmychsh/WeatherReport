@@ -16,6 +16,8 @@
 		2C3ED7942235B8F2009ABC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3ED7922235B8F2009ABC89 /* LaunchScreen.storyboard */; };
 		2C3ED79F2235B8F3009ABC89 /* WeatherReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3ED79E2235B8F3009ABC89 /* WeatherReportTests.swift */; };
 		2C3ED7AA2235B8F3009ABC89 /* WeatherReportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3ED7A92235B8F3009ABC89 /* WeatherReportUITests.swift */; };
+		2CD087A32238A99F000C8674 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD087A22238A99F000C8674 /* WeatherTableViewController.swift */; };
+		2CD087A52238BBF5000C8674 /* ParseWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD087A42238BBF5000C8674 /* ParseWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2C3ED7A52235B8F3009ABC89 /* WeatherReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3ED7A92235B8F3009ABC89 /* WeatherReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportUITests.swift; sourceTree = "<group>"; };
 		2C3ED7AB2235B8F3009ABC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD087A22238A99F000C8674 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		2CD087A42238BBF5000C8674 /* ParseWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				2C3ED7922235B8F2009ABC89 /* LaunchScreen.storyboard */,
 				2C3ED7952235B8F2009ABC89 /* Info.plist */,
 				2C3ED7862235B8EE009ABC89 /* WeatherReport.xcdatamodeld */,
+				2CD087A22238A99F000C8674 /* WeatherTableViewController.swift */,
+				2CD087A42238BBF5000C8674 /* ParseWeather.swift */,
 			);
 			path = WeatherReport;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3ED7882235B8EE009ABC89 /* WeatherReport.xcdatamodeld in Sources */,
+				2CD087A32238A99F000C8674 /* WeatherTableViewController.swift in Sources */,
+				2CD087A52238BBF5000C8674 /* ParseWeather.swift in Sources */,
 				2C3ED7852235B8EE009ABC89 /* AppDelegate.swift in Sources */,
 				2C3ED78A2235B8EE009ABC89 /* MasterViewController.swift in Sources */,
 				2C3ED78C2235B8EE009ABC89 /* DetailViewController.swift in Sources */,

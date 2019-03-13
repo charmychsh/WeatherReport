@@ -30,6 +30,9 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
+        searchBar.accessibilityIdentifier = "search-bar" 
+        
+        
         updateWeatherForLocation(location: "New York")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,12 +50,16 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     func updateWeatherForLocation (location:String) {
+
         CLGeocoder().geocodeAddressString(location) { (placemarks:[CLPlacemark]?, error:Error?) in
+            
             if error == nil {
+                
                 if let location = placemarks?.first?.location {
                     Weather.forecast(withLocation: location.coordinate, completion: { (results:[Weather]?) in
                         
                         if let weatherData = results {
+
                             self.forecastData = weatherData
                             
                             DispatchQueue.main.async {

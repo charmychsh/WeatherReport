@@ -40,8 +40,8 @@ struct Weather {
     
     static func forecast (withLocation location:CLLocationCoordinate2D, completion: @escaping ([Weather]?) -> ()) {
         
-        let url = basePath + "\(location.latitude),\(location.longitude)"
-        let request = URLRequest(url: URL(string: url)!)
+        let urlNew = basePath + "\(location.latitude),\(location.longitude)"
+        let request = URLRequest(url: URL(string: urlNew)!)
         
         let task = URLSession.shared.dataTask(with: request) { (data:Data?, response:URLResponse?, error:Error?) in
             
